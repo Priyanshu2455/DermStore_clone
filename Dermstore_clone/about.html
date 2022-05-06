@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/nav_bar.css">
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="icon" sizes="16x16 32x32" href="https://slatesf.com/wp-content/uploads/2021/04/Dermstore-logo2.jpg">
+    <title>Dermstore | Skin Care Website for Beauty Products Online</title>
+</head>
+<body>
+   <!-- --------------header part------------- -->
+<section class="header_nav sticky">
+    <div class="container flex_box_2">
+        <a href="./index.html"><img src="https://slatesf.com/wp-content/uploads/2021/04/Dermstore-logo2.jpg" alt="logo" id="logo"></a>
+        <div class="flex_box">
+            <div class="search">
+                <input type="text" placeholder="Search Brands, Concerns, Products" id="search_box">
+                <button class="search_btn"><img src="https://cdn.icon-icons.com/icons2/2551/PNG/512/search_icon_152764.png" alt=""></button>
+            </div>
+            <div class="cart flex_box">
+                <p id="cart_item"><strong id="cart_count">(0)</strong>items</p>
+                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAMAAACZQ1hUAAAAZlBMVEX///8AAABAQEB0dHTAwMDR0dGLi4urq6vb29v4+Pjt7e17e3tYWFjOzs7k5OTy8vIXFxddXV0lJSVqamocHBxLS0ucnJxvb2+5ubmjo6MqKipTU1Ozs7PHx8eBgYE3NzcNDQ2UlJRD3UrIAAADRklEQVR4nO2a6bKiMBCFOYBAQBbZFxV4/5ec4JT3wkwJCXQuUzX5/tpax6bTWzAMjUaj0Wg0Go1GQ0bszfHPkMCumNPe6p/XEONPbj/vC8+d0QQt98UpD2SGb3FPnKzBMG5AeLaGKEdwtgbjipadrWEEvLM1XIDmbA1+i+xsDUaGxFRENwomn/Kv3ElIKhZrHmAGlhJ6IImERAzKUiVrAEvIMkMaKxJhdILZx1WYrkvkQg+DB8SoSkOAVszHLQpVGhJcxQwzQJEETzgJ34GHGg3ixcgb4CiRwNvXTrAoswJXJfU7gvifCwAlXeVd4tTbgK1CwxWJsH994KlAAm8LxDL1BA8IFRmCu9cVt3aQKGjonlJhxhXf6TXkMCWsmWiNlYEnyVLGvkdLroE3DxcZexUd/g2mVOZ7SIWwEPzAy01wUkdZjFo68XXIiTVYGCQLQEkdEH6PSvIr5CNfKB9hPCBkZa/jAGKjxYwKPWn97tFLf0c2o2zAezP5Zl02s27g7upRE3SEGm5Id7SHFVK6gOBFcE+I7/Pe5x/bswKmHPmifOcpS6VajjXqZJ8bpoCAQ0HQY/cZu9OtgJK9x9xLiBQUpXSWfsM7/NvpK1u5XlwNtbIdgDiKRj4pWIfi9IBwkJ++w7f3pjdClIx8sphIz5ZgjP/Apc5DyQ5AjulS53KYg+e7o6hZBxNdQ6HhaG8c2sdRdhui+b9hvneJhKJL3FISt5hOWZ5tp+7mZZlW1Ek+6kUTjvdtSXsP47WA6dTh3RqwfiPv5ZOlHbrVQFz3uYQg/lKzMq8w/vHzt+UlJd1oNbMnEPdre6Vy9gRirocsMpkJ8/vH7JVxPDbnTXBNuMlZboW4oo8XbsvrS66I7PL+sdyOPT+vEuxl22XN/XeM+zICRrSfAsJdDodPum3SY3kjGMAU9ENF54doEYX8YHx8ysvI8Xu6t3v4yDd7kc9dOfasQP/9zxvKOxDu4q83BsIc+ecetZ6l0XCQuFHdhne219eDZlvbrcnyFbFs2iRRDor+VIiyshm7raLl8wyNqmycgrxoseBdDIeNmYdZb8uEfFy+VGaCVORFrzDrX5Yquhg/8iKxGPM9UUuNRqPRaDQajUZzjF9Yiic8M/aJfQAAAABJRU5ErkJggg==" alt="">
+                 <img src="" alt="">
+                 <a href="./login.html" id="user"> Log In / Sign Up <i class="down"></i></a>
+                 <img src="data:image/png;base64,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" alt="">
+             </div>
+        </div>
+    </div>
+    <div class="container flex_box_2 menu">
+        <a href="./index.html">Browse By</a>
+        <a href="./brand.html">Brands</a>
+        <a href="#">Skin Care</a>
+        <a href="#">Makeup</a>
+        <a href="#">Hair Care</a>
+        <a href="#">Bath & Body</a>
+        <a href="#">Men</a>
+        <a href="#">Gifts & Sets</a>
+        <a href="#">Sale</a>
+        <a href="#">Skin 101</a>
+    </div>
+</section>
+<!-- --------------header part------------- -->
+    <div id="page1">
+        <h1>Let’s face it—we’re all different,</h1>
+        <p>our cultures, ethnicities, genders, sexualities. And there’s vitality and power in those differences. But something important unites us—from a smooth baby’s cheek to the crisscrossing lines born from a lifetime of laughter, we’ll always be in the skin we’re in. We’re here to honor and protect it. To obsess over it. To bear witness to its magical properties, understand its limitations and offer it the care it needs. We’re a vibrant community of dermatologists, consumers and brands, and we’re all here for the unabashed love of skin.</p>
+    </div>
+    <div id="page2">
+        <div>
+            <img id="img1" src="https://static.thcdn.com/images/medium/webp/widgets/208-us/54/holiday-kits-hp-banner-10-20-m-011354.png">
+        </div>
+        <div>
+            <h1>We’re Dermstore</h1>
+            <p>Dermstore was created in 1999 by a dermatologist who wanted to better serve his patients with easier access to the treatments their skin needed. From that day through today, our focus is providing the highest quality products and straight-from-the-experts information to guide you through your skin care journey.</p>
+        </div>
+    </div>
+   <div id="diffrences">
+    <hr>
+    <h1>The Dermstore Difference</h1>
+   </div>
+    <div id="para">
+        <p>We offer professional-strength formulas from top skin care brands (otherwise only available at a dermatologist’s office), hard-to-find spa care and natural beauty brands, professional hair care and makeup products, and specialty brands from around the world.</p>
+    </div>
+     <div id="why-shop">
+         <img src="https://static.thcdn.com/images/medium/webp/widgets/208-us/12/original-original-Desktop-092243-035712.jpg" style="width: 100%;height: 100%;">
+     </div>
+     <div id="learn-more">
+        <div>
+            <img class="abtimg" src="https://static.thcdn.com/images/small/webp/widgets/208-us/20/Untitled_design_%285%29-121720.png" alt="">
+            <h2>Authentic Beauty Products, Guaranteed</h2>
+            <p style="font-size: 20px;">We work closely with your favorite beauty brands as an authorized retailer to make sure all the products we ship are guaranteed authentic.</p>
+            <button href="#">SEE ALL BRANDS</button>
+        </div>
+        <div>
+            <img class="abtimg" src="https://static.thcdn.com/images/small/webp/widgets/208-us/50/Untitled_design_%286%29-125650.png" alt="">
+            <h2>Expert Tips and Advice</h2>
+            <p style="font-size: 20px;">We give you all the information you need to make intelligent shopping decisions for yourself. We work with top dermatologists, estheticians, hairstylists and makeup artists to curate products and give expert advice on all your beauty concerns.</p>
+            <button href="#">READ EXPERT ADVICE</button>
+        </div>
+        <div>
+            <img class="abtimg" src="https://static.thcdn.com/images/small/webp/widgets/208-us/11/Untitled_design_%287%29-125711.png" alt="">
+            <h2>Award-Winning Customer Service Team</h2>
+            <p style="font-size: 20px;">Winner of the Bizrate Platinum Circle of Excellence Award for over ten years, our team of highly trained beauty experts are ready to help find the right solution for you.</p>
+            <button href="#">SEE ALL BRANDS</button>
+        </div>
+        
+     </div>
+     <!------------------- footer div html----------------- -->
+    <div id="footer-div">
+        <div>
+          <h6>Company</h6>
+          <a href="./about.html">About Us</a><br />
+          <div id="space"></div>
+          <a href="#">Dermstore Spa</a><br />
+          <div id="space"></div>
+          <a href="#">Testimonials</a><br />
+          <div id="space"></div>
+          <a href="#">Press</a><br />
+          <div id="space"></div>
+          <a href="#">Brand Submissions</a><br />
+          <div id="space"></div>
+          <a href="#">eGift Cards</a><br />
+        </div>
+        <div>
+          <h6>Customer Service</h6>
+          <a href="#">Customer Service</a><br />
+          <div id="space"></div>
+          <a href="#">FAQs</a><br />
+          <div id="space"></div>
+          <a href="#">About Rewards</a><br />
+          <div id="space"></div>
+          <a href="#">Order Status</a><br />
+          <div id="space"></div>
+          <a href="#">Shipping Information</a><br />
+          <div id="space"></div>
+          <a href="#">Product Recall</a><br />
+          <div id="space"></div>
+          <a href="#">Accessibility</a><br />
+        </div>
+        <div>
+          <h6>My Account</h6>
+          <a href="#">Dermstore Subscriptions</a><br />
+          <div id="space"></div>
+          <a href="#">My Rewards</a><br />
+          <div id="space"></div>
+          <a href="#">My Favorites</a><br />
+          <div id="space"></div>
+          <a href="#">Order History</a><br />
+          <div id="space"></div>
+          <a href="#">Returns</a><br />
+        </div>
+        <div>
+          <h6>New Subscribers Receive 15% Off*</h6>
+          <label for="">Email</label><br />
+          <input type="text" name="" id="offer-email" placeholder="Email" />
+          <button>></button>
+          <br /><br />
+          <a href="#"
+            >*Offer valid for new subscribers and participating brands only.
+            Single-use promo will be sent via email.</a
+          ><br /><br />
+          <div id="login-follow">
+            Follow us on
+            <br /><br />
+            <img id="img-social" src="login_img\facebook_svg.svg" alt="" />
+            <img id="img-social" src="login_img\instagram_svg.svg" alt="" />
+            <img id="img-social" src="login_img\twitter_svg.svg" alt="" />
+            <img id="img-social" src="login_img\youtube_svg.svg" alt="" />
+            <img id="img-social" src="login_img\pinterest_svg.svg" alt="" />
+          </div>
+          <div id="space"></div>
+          
+          
+        </div>
+      </div>
+      <br><hr style="width: 70%;">
+        <div id="login-privacy">
+          <p>Copyright © 2021 Dermstore.com. All Rights Reserved.</p>
+          <p>CA Privacy Rights Do Not Sell My Personal Information - CA Residents Interest-Based Ads Privacy and Security Terms of Use</p>
+      </div><br>
+      <script src="./scripts/nav_bar.js"></script>
+    <script></script>
+</body>
+</html>

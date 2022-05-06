@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/nav_bar.css">
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="icon" sizes="16x16 32x32" href="https://slatesf.com/wp-content/uploads/2021/04/Dermstore-logo2.jpg"/>
+    <title>Dermstore | Skin Care Website for Beauty Products Online</title>
+  </head>
+  <body>
+   <!-- --------------header part------------- -->
+
+<section class="header_nav sticky">
+  <div class="container flex_box_2">
+      <a href="./index.html"><img src="https://slatesf.com/wp-content/uploads/2021/04/Dermstore-logo2.jpg" alt="logo" id="logo"></a>
+      <div class="flex_box">
+          <div class="search">
+              <input type="text" placeholder="Search Brands, Concerns, Products" id="search_box">
+              <button class="search_btn"><img src="https://cdn.icon-icons.com/icons2/2551/PNG/512/search_icon_152764.png" alt=""></button>
+          </div>
+          <div class="cart flex_box">
+            <p id="cart_item"><strong id="cart_count">(0)</strong>items</p>
+             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAMAAACZQ1hUAAAAZlBMVEX///8AAABAQEB0dHTAwMDR0dGLi4urq6vb29v4+Pjt7e17e3tYWFjOzs7k5OTy8vIXFxddXV0lJSVqamocHBxLS0ucnJxvb2+5ubmjo6MqKipTU1Ozs7PHx8eBgYE3NzcNDQ2UlJRD3UrIAAADRklEQVR4nO2a6bKiMBCFOYBAQBbZFxV4/5ec4JT3wkwJCXQuUzX5/tpax6bTWzAMjUaj0Wg0Go1GQ0bszfHPkMCumNPe6p/XEONPbj/vC8+d0QQt98UpD2SGb3FPnKzBMG5AeLaGKEdwtgbjipadrWEEvLM1XIDmbA1+i+xsDUaGxFRENwomn/Kv3ElIKhZrHmAGlhJ6IImERAzKUiVrAEvIMkMaKxJhdILZx1WYrkvkQg+DB8SoSkOAVszHLQpVGhJcxQwzQJEETzgJ34GHGg3ixcgb4CiRwNvXTrAoswJXJfU7gvifCwAlXeVd4tTbgK1CwxWJsH994KlAAm8LxDL1BA8IFRmCu9cVt3aQKGjonlJhxhXf6TXkMCWsmWiNlYEnyVLGvkdLroE3DxcZexUd/g2mVOZ7SIWwEPzAy01wUkdZjFo68XXIiTVYGCQLQEkdEH6PSvIr5CNfKB9hPCBkZa/jAGKjxYwKPWn97tFLf0c2o2zAezP5Zl02s27g7upRE3SEGm5Id7SHFVK6gOBFcE+I7/Pe5x/bswKmHPmifOcpS6VajjXqZJ8bpoCAQ0HQY/cZu9OtgJK9x9xLiBQUpXSWfsM7/NvpK1u5XlwNtbIdgDiKRj4pWIfi9IBwkJ++w7f3pjdClIx8sphIz5ZgjP/Apc5DyQ5AjulS53KYg+e7o6hZBxNdQ6HhaG8c2sdRdhui+b9hvneJhKJL3FISt5hOWZ5tp+7mZZlW1Ek+6kUTjvdtSXsP47WA6dTh3RqwfiPv5ZOlHbrVQFz3uYQg/lKzMq8w/vHzt+UlJd1oNbMnEPdre6Vy9gRirocsMpkJ8/vH7JVxPDbnTXBNuMlZboW4oo8XbsvrS66I7PL+sdyOPT+vEuxl22XN/XeM+zICRrSfAsJdDodPum3SY3kjGMAU9ENF54doEYX8YHx8ysvI8Xu6t3v4yDd7kc9dOfasQP/9zxvKOxDu4q83BsIc+ecetZ6l0XCQuFHdhne219eDZlvbrcnyFbFs2iRRDor+VIiyshm7raLl8wyNqmycgrxoseBdDIeNmYdZb8uEfFy+VGaCVORFrzDrX5Yquhg/8iKxGPM9UUuNRqPRaDQajUZzjF9Yiic8M/aJfQAAAABJRU5ErkJggg==" alt="">
+             <img src="" alt="">
+             <a href="./login.html" id="user"> Log In / Sign Up <i class="down"></i></a>
+             <img src="data:image/png;base64,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" alt="">
+         </div>
+      </div>
+  </div>
+  <div class="container flex_box_2 menu">
+      <a href="./index.html">Browse By</a>
+      <a href="./brand.html">Brands</a>
+      <a href="#">Skin Care</a>
+      <a href="#">Makeup</a>
+      <a href="#">Hair Care</a>
+      <a href="#">Bath & Body</a>
+      <a href="#">Men</a>
+      <a href="#">Gifts & Sets</a>
+      <a href="#">Sale</a>
+      <a href="#">Skin 101</a>
+  </div>
+</section>
+
+    <!-- nav -->
+    
+    <div id="login-content">
+      <h4 id="login-a-h4">
+        <a href="index.html">Home</a> > Account >
+        <a href="login.html">Sign In</a>
+      </h4>
+      <br />
+      <h3 id="login-content-h3">Sign In / Sign Up</h3>
+      <hr />
+    </div>
+
+      <section class="forget hide">
+        <h1>Reset password</h1>
+        <div class="form">
+          <label for="reset_email">Email </label><br>
+          <input type="text" name="" id="reset_email" placeholder="Email" /><br>
+          <label for="">Password</label><br>
+          <input
+            type="password"
+            name=""
+            id="reset-password"
+            placeholder="Password"
+          /><br>
+          <label for="">Confirm Password</label><br>
+          <input
+            type="password"
+            name=""
+            id="reset2-password"
+            placeholder="Confirm Password"
+          /><br>
+          <button id="reset-button" onclick="reset()">Reset</button>
+        </div>
+
+      </section>
+
+
+    <div id="login-main">
+      <div id="login-module">
+        <h3 id="login-module-h3">Existing Customer</h3>
+      
+        <br />
+        <form action="">
+          <label for="">*Email address</label>
+          <input type="text" name="" id="login-email" placeholder="Email" />
+          <label for="">*Password</label>
+          <input
+            type="password"
+            name=""
+            id="login-password"
+            placeholder="Password"
+          />
+        </form>
+        <a href="#" onclick="Forget_ps()">Forgot your password?</a><br />
+        <button id="login-button" onclick="signin()">Sign In</button>
+        <div id="bank_option">
+          <p>Or,continue with</p><br>
+          <div><img class="size" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD6lrHkgyoJ6Ydv4Ra9wE9Frf9n-fL60cplxwhocBJNTaLd9oYYrFfMMm0IPbvrnRCb_8&usqp=CAU" alt=""></div>
+          <div><img class="size" src="https://1000logos.net/wp-content/uploads/2016/11/google-logo.jpg" alt=""></div>
+        </div>
+      </div>
+      
+
+      <!-- sign-up -->
+      <div id="hr-module"></div>
+      <div id="signup-module">
+        <h3 id="login-module-h3">Create an Account</h3>
+        <p id="login-module-p">
+          Sign up to use convenient features and quick checkout.
+        </p>
+        <br />
+        <form action="">
+          <label for="">Email</label>
+          <input type="text" name="" id="signup-email" placeholder="Email" />
+          <label for="">Password</label>
+
+          <input
+            type="password"
+            name=""
+            id="signup-password"
+            placeholder="Password"
+          /><small id="signup-small"
+            >* atleast 8 characters</small
+          >
+          <br/>
+        </form>
+
+        <button id="signup-button" onclick="signup()">Sign Up</button>
+      </div>
+    </div>
+
+    <!-- footer div html -->
+    <div id="footer-div">
+      <div>
+        <h6>Company</h6>
+        <a href="./about.html">About Us</a><br />
+        <div id="space"></div>
+        <a href="#">Dermstore Spa</a><br />
+        <div id="space"></div>
+        <a href="#">Testimonials</a><br />
+        <div id="space"></div>
+        <a href="#">Press</a><br />
+        <div id="space"></div>
+        <a href="#">Brand Submissions</a><br />
+        <div id="space"></div>
+        <a href="#">eGift Cards</a><br />
+      </div>
+      <div>
+        <h6>Customer Service</h6>
+        <a href="#">Customer Service</a><br />
+        <div id="space"></div>
+        <a href="#">FAQs</a><br />
+        <div id="space"></div>
+        <a href="#">About Rewards</a><br />
+        <div id="space"></div>
+        <a href="#">Order Status</a><br />
+        <div id="space"></div>
+        <a href="#">Shipping Information</a><br />
+        <div id="space"></div>
+        <a href="#">Product Recall</a><br />
+        <div id="space"></div>
+        <a href="#">Accessibility</a><br />
+      </div>
+      <div>
+        <h6>My Account</h6>
+        <a href="#">Dermstore Subscriptions</a><br />
+        <div id="space"></div>
+        <a href="#">My Rewards</a><br />
+        <div id="space"></div>
+        <a href="#">My Favorites</a><br />
+        <div id="space"></div>
+        <a href="#">Order History</a><br />
+        <div id="space"></div>
+        <a href="#">Returns</a><br />
+      </div>
+      <div>
+        <h6>New Subscribers Receive 15% Off*</h6>
+        <label for="">Email</label><br />
+        <input type="text" name="" id="offer-email" placeholder="Email" />
+        <button>></button>
+        <br /><br />
+        <a href="#"
+          >*Offer valid for new subscribers and participating brands only.
+          Single-use promo will be sent via email.</a
+        ><br /><br />
+        <div id="login-follow">
+          Follow us on
+          <br /><br />
+          <img id="img-social" src="login_img\facebook_svg.svg" alt="" />
+          <img id="img-social" src="login_img\instagram_svg.svg" alt="" />
+          <img id="img-social" src="login_img\twitter_svg.svg" alt="" />
+          <img id="img-social" src="login_img\youtube_svg.svg" alt="" />
+          <img id="img-social" src="login_img\pinterest_svg.svg" alt="" />
+        </div>
+        <div id="space"></div>
+        
+        
+      </div>
+    </div>
+    <br><hr style="width: 70%;">
+      <div id="login-privacy">
+        <p>Copyright © 2021 Dermstore.com. All Rights Reserved.</p>
+        <p>CA Privacy Rights Do Not Sell My Personal Information - CA Residents Interest-Based Ads Privacy and Security Terms of Use</p>
+    </div><br>
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/nav_bar.js"></script>
+  </body>
+</html>

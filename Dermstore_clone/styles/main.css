@@ -1,0 +1,340 @@
+body{
+    margin: 0;
+    font-family: "Helvetica Neue", serif, Helvetica,Arial,sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+*{
+    font-family: apercu;
+}
+.banner_box{
+    background-image: url("https://static.thcdn.com/images/xlarge/webp/widgets/208-us/04/original-1904_THG0034748_DERMSTOREMAY_SHOT1_1920x700-054404.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    width: 100%;
+    margin: 50px auto;
+    /* border: 1px solid red; */
+}
+.banner >*{
+    color:black;
+    font-family: apercu,sans-serif;
+    font-size: 12px;
+}
+.banner{
+    width: 35%;
+    padding:0 50px;
+    /* border: 1px solid red; */
+    margin-left: 850PX;
+}
+.banner>h3{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.banner>h1{
+    font-size: 45px;
+    margin-top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+.banner>p{
+    font-size: 18px;
+}
+.banner a{
+    color:black;
+    text-decoration: underline;
+}
+.banner>button{
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color:black;
+    color: black;
+    border : none;
+    margin-bottom: 20px;
+    color:white;
+}
+.shop_beauty{
+    margin-top: 50px;
+    margin-bottom: 50x;
+}
+.boxes>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    padding: 5px;
+    width: 200px;
+    min-height: 50px;
+    text-align: center;
+    margin: 10px;
+}
+.boxes>div>a{
+    color: black;
+    font-size: 16px;
+    font-family: apercu;
+    font-weight: bold;
+}
+.boxes{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.shop{
+    width: 1000px;
+    margin: 50px auto;
+    position: relative;
+    border-top: 1px solid rgba(0, 128, 128, 0.753);
+}
+.shop_head{
+    text-align: center;
+}
+.shop_head>h1{
+    width: fit-content;
+    position: absolute;
+    top: -35px;
+    left: 35%;
+    text-align: center;
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.trending{
+   /* background-image: url("https://static.thcdn.com/images/large/webp/widgets/208-us/57/original-Sezzle-Assets_HPBanner-__1640X244__copy-074257.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.trending_details>*{
+    color: black;
+    margin: 2px;
+    padding-left: 50px;
+    
+}
+
+.trending_details>h1{
+font-size: 30px;
+font-weight: normal;
+margin-left: 600px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bio{
+    margin-top: 30px;
+ height: fit-content;
+    display: flex;
+    align-items: center;
+}
+.bio_product{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.boi_disp{
+    font-size: 18px;
+}
+.boi_scroll,.brand_scroll{
+    flex-grow: 1;
+    display: flex;
+    overflow: auto;
+    height: 100%;
+}
+.product{
+    width: 250px;
+    height: 100%;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.arrow{
+    font-size: 50px;
+    height: 100%;
+    cursor: pointer;
+}
+.product>img{
+    width: 150px;
+}
+.discription{
+ height: 100px;   
+}
+.boi_scroll::-webkit-scrollbar
+{
+    height: 5px;
+	background-color: #F5F5F5;
+}
+.boi_scroll::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+.brand_log>img{
+ height: 40px;
+}
+.brand_log{
+    justify-content: space-evenly;
+}
+.brand{
+    border-top: 1px solid rgba(0, 128, 128, 0.623);
+    position: relative;
+}
+.brand_head{
+    position: relative;
+    top: -35px;
+    left: 35%;
+}
+.brand_head>h1{
+    background-color: white;
+    width: fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.brand_banner{
+    background-image: url("https://media.dermstore.com/images/homepage/hp-carousel-now-arrivals.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+    margin-top: 80px;
+    justify-content: flex-end;
+}
+.banner_text{
+    width: 40%;
+    padding: 10px 25px;
+    margin-left: 600px;
+}
+.banner_text>*{
+color: black;
+}
+.banner_text>h1{
+    padding-top: 10px;
+    margin-bottom: 0;
+
+}
+.banner_text>a{
+    text-decoration: underline;
+    font-family: "lato regular",Helvetica,Arial,sans-serif;
+    text-decoration: none;
+}
+.brand_product>img{
+    width: 150px;
+}
+
+.brand_product{
+    width: 200px;
+    cursor: pointer;
+    margin: 10px 20px;
+}
+.brand_product:hover>*{
+   text-decoration: none;
+}
+.brand_discription{
+    height: 50px;
+}
+.brand_scroll::-webkit-scrollbar
+{
+    height: 5px;
+	background-color: #F5F5F5;
+}
+.brand_scroll::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+.blog{
+    position: relative;
+    margin: 80px auto;
+    border-top: 1px solid teal;
+    border-bottom: 1px solid teal;
+}
+.blog_head{
+    position: absolute;
+    top: -35px;
+    left: 40%;
+}
+.blog_head>h1{
+    width: fit-content;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.blog_product{
+    width: 350px;
+    padding: 30px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.blog_product>img{
+    width: 300px;
+}
+.blog_scroll::-webkit-scrollbar {
+    display: none;
+}
+.blog_product>p{
+    width: 75%;
+    margin: 20px auto;
+    transition:all 500ms ease-in-out;
+}
+.blog_product:hover>p{
+    color: gray;
+    margin: 15px auto;
+}
+.Authorize_box{
+    text-align: center;
+    border-bottom: 1px solid teal;
+    padding-bottom: 40px;
+    /* justify-content: center; */
+    margin-top: -30px;
+}
+.Authorize_box>p{
+  margin: 10px;
+  font-size: 20px;
+}
+.Authorize_box>button{
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color:black;
+    color: black;
+    border : none;
+    margin-bottom: 20px;
+    color:white;
+    
+}
+
+  #video{
+      width:100%;
+      height:600px;
+      
+         
+  }
+  #iframe{
+    margin-top: 50px;
+    margin-left: 150px;
+    border:none;  
+  }
+ #info{
+     width:90%;
+     height:150px;
+     /* border: 1px solid red; */
+     margin: auto;
+     text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    
+ }
+ #pay_later{
+    margin-left: 80px;
+    width:90%;
+    margin-top: 30px;
+ }
+ .quickbuy{
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color:black;
+    color: black;
+    border : none;
+    margin-bottom: 20px;
+    color:white;
+ }
